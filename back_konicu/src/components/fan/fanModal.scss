@@ -1,0 +1,27 @@
+.modal {
+    .modal-content{
+
+        border: 3px solid var(--orange);
+
+        .modal-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            h3, h5 {
+                color: var(--purple);
+                width: 100%;
+            }
+    
+            button {
+                position: absolute;
+                // top: 0;
+                right: 15px;
+            }
+    
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+}

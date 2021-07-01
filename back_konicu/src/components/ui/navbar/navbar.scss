@@ -1,0 +1,17 @@
+@import '../../../../public/styles/colors';
+
+.bg-dark {
+    background-color: $purple !important;
+    color: white;
+
+    &.expanded {
+        z-index: 999;
+    }
+
+    .navbar-toggler {
+        z-index: 100;
+    }
+    .navbar-collapse {
+        z-index: 999;
+    }
+}

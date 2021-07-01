@@ -1,0 +1,15 @@
+.card {
+    .card-body {
+        h5 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: justify;
+        }
+        .icons-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
