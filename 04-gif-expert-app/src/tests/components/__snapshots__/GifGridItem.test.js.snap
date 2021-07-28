@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <GifGridItem /> should display the component 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="Gif title"
+    src="gifUrl"
+  />
+  <p>
+    Gif title
+  </p>
+</div>
+`;
