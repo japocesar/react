@@ -1,6 +1,10 @@
 import React, { useMemo } from 'react'
 import { Redirect, useParams } from 'react-router-dom'
+import { heroImgs } from '../../helpers/heroImages';
 import { getHeroById } from '../../selectors/getHeroById';
+
+// import batman from '../../assets/heroes/dc-batman.jpg'; // static image+
+
 
 export const HeroScreen = ( { history } ) => {
     const { heroId } = useParams();
@@ -10,6 +14,8 @@ export const HeroScreen = ( { history } ) => {
     if ( !hero ) {
         return <Redirect to='/' />
     }
+
+    console.log(`Hero: ${ hero.superhero }, Hero Id: ${hero.id}`)
 
     const handleReturn = () => {
         if ( history.length <= 2 ) {
@@ -32,7 +38,9 @@ export const HeroScreen = ( { history } ) => {
         <div className="row mt-5">
             <div className="col-4">
                 <img
-                    src={ `../assets/heroes/${heroId}.jpg` }
+                    // src={ `../assets/heroes/${heroId}.jpg` }
+                    // src={ batman } // static image
+                    src={ heroImgs(`./${heroId}.jpg`) }
                     alt={ superhero }
                     className="img-thumbnail animate__animated animate__fadeInLeft"
                 />
